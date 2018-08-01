@@ -1,0 +1,19 @@
+{
+  "name": "mysearches",
+  "version": "1.0.0",
+  "description": "MySearches is a web app to retrieve easily the ressources that are helpful for me in my Journey of Software Engineer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abil27/mySearches.git"
+  },
+  "author": "Houssein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abil27/mySearches/issues"
+  },
+  "homepage": "https://github.com/Abil27/mySearches#readme"
+}
