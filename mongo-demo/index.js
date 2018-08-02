@@ -13,12 +13,19 @@ const searchSchema = new mongoose.Schema({
     date: {type: Date, default: Date.now}
 });
 
-//compile into a model
-const Search = mongoose.model('Search', searchSchema);
-const search = new Search ({
-    title: 'Push to different repo',
-    description: 'Pushing automatically to diffenrent repo',
-    link: 'http://link.com',
-    tags: ['Git', 'github', 'stackoverflow']
+async function createSearch() {
+     //compile into a model
+     const Search = mongoose.model('Search', searchSchema);
+     const search = new Search ({
+         title: 'about node',
+         description: 'best ressource to learn node',
+         link: 'http://link2.com',
+         tags: ['node', 'backend', 'javascript']
+     });
+ 
+     //save to Database
+     const result = await search.save();
+     console.log(result);   
+}
 
-});
+createSearch();
