@@ -12,3 +12,13 @@ const searchSchema = new mongoose.Schema({
     tags: String,
     date: {type: Date, default: Date.now}
 });
+
+//compile into a model
+const Search = mongoose.model('Search', searchSchema);
+const search = new Search ({
+    title: 'Push to different repo',
+    description: 'Pushing automatically to diffenrent repo',
+    link: 'http://link.com',
+    tags: ['Git', 'github', 'stackoverflow']
+
+});
